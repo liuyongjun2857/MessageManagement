@@ -37,7 +37,7 @@ namespace Message.UI.Areas.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [CrossSiteScript]
-        public async Task<string> AddOrModifyAsync([FromForm]FieldRelation model)
+        public string AddOrModifyAsync([FromForm]FieldRelation model)
         {
             BaseResult baseResult = new BaseResult();
             try
